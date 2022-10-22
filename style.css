@@ -1,0 +1,155 @@
+*{
+    font-family: 'VT323', monospace;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    background: url("./weathersnoopy.jpg");
+    background-size: cover;
+    font-size: 27px;
+}
+body .banner {
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+    background-color: rgb(187, 163, 97);
+    color: black;
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+}
+p{
+    margin: 0%;
+}
+body .banner.auto-type{
+    position: relative;
+}
+.contents {
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(187, 163, 97);
+    padding: 1em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    color: black;
+}
+.temp{
+    font-size: 50px;
+}
+.search{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 35px;
+    width: 35px;
+    outline: none;
+    background:white;
+    color: rgb(187, 163, 97);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    font-family: inherit;
+    font-size: 70%;
+    width: 75%;
+}
+button:hover{
+    background-color: rgba(8, 8, 8, 0.555) ;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.description{
+    text-transform: capitalize;
+}
+.weather.default{
+    visibility: hidden;
+    display: none;
+}
+.weather.default::after{
+    visibility: visible;
+}
+@media screen and (max-width:1060px) {
+    body .banner{
+        height: max-content;
+        margin-bottom: 0;
+    }
+    p{
+        font-size: 20px;
+    }
+    .datetime{
+        display:none;
+    }
+    body .contents{
+        margin-top: 0;
+    }
+    .card{
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(187, 163, 97);
+        padding: 1em;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 420px;
+        margin: 1em;
+        color: black;
+        font-size:24px;
+    }
+    h2{
+        font-size: 33px;
+    }
+    .temp{
+        font-size: 38px;
+    }
+    .search{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    button{
+        margin: 0.5em;
+        border-radius: 50%;
+        border: none;
+        height: 35px;
+        width: 35px;
+        outline: none;
+        background:white;
+        color: rgb(187, 163, 97);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    
+    input.search-bar{
+        border: none;
+        outline: none;
+        padding: 0.4em 1em;
+        border-radius: 30px;
+        background-color: white;
+        color: black;
+        font-family: inherit;
+        font-size: 80%;
+        width: 75%;
+    }
+}
